@@ -5,43 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/framwork.css">
+  <link rel="stylesheet" href="style/Normalize.css">
+  <link rel="stylesheet" href="style/all.min.css">
+  <link rel="stylesheet" href="style/main.css">
   <title>Frontend Mentor | Results summary component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<body class="center-flex">
+  <div class="results-box bg-white rad-10 d-flex">
+    <div class="result p-20 center-flex direction-col">
+      <h2 class="mb-20">Your Results</h2>
+      <div class="circle mb-20 center-flex direction-col">
+        <span>76</span>
+        <span>of 100</span>
+      </div>
+      <h3 class="mb-15">Great</h3>
+      <p>Your score is higher than 65% of the people who've thaken these tests</p>
+    </div>
+    <div class="stats p-20">
+      <h2 class="fs-20 mb-30">Summery</h2>
+      <div class="stats-box">
+        <div class="box mb-15 between-flex p-10 fs-14">
+          <div class="title d-flex">
+            <i class="fa-solid fa-bolt mr-20"></i>
+            <span>Reaction</span>
+          </div>
+          <span><span class="c-black">80</span><span class="special-percent"> / 100</span></span>
+        </div>
+        <div class="box mb-15 between-flex p-10 fs-14">
+          <div class="title d-flex">
+            <i class="fa-solid fa-brain mr-20"></i>
+            <span>Memory</span>
+          </div>
+          <span><span class="c-black">80</span><span class="special-percent"> / 100</span></span>
+        </div>
+        <div class="box mb-15 between-flex p-10 fs-14">
+          <div class="title d-flex">
+            <i class="fa-solid fa-comment mr-20"></i>
+            <span>Verbal</span>
+          </div>
+          <span><span class="c-black">80</span><span class="special-percent"> / 100</span></span>
+        </div>
+        <div class="box mb-15 between-flex p-10 fs-14">
+          <div class="title d-flex">
+            <i class="fa-solid fa-eye mr-20"></i>
+            <span>Visual</span>
+          </div>
+          <span><span class="c-black">80</span><span class="special-percent"> / 100</span></span>
+        </div>
+      </div>
+      <button class="w-full p-15 center-flex border-none">Continue</button>
+    </div>
   </div>
 </body>
 </html>
+<!-- <div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Your Name Here</a>.
+</div> -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
