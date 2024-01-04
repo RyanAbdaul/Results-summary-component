@@ -48,32 +48,33 @@ h6 {
   -o-border-radius: 10px;
 }
 .results-box .result h2 {
-  font-size: 13px;
+  font-size: 17px;
   color: var(--light-lavender);
 }
 .results-box .result div.circle {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   background: linear-gradient(to top, var(--persian-blue), var(--violet-blue));
 }
 .results-box .result div.circle span:first-child {
-  font-size: 40px;
+  font-size: 50px;
   color: var(--white);
 }
 .results-box .result div.circle span:last-child {
   color: var(--light-lavender);
-  font-size: 10px;
+  font-size: 15px;
 }
 .results-box .result h3 {
   color: var(--white);
   letter-spacing: 1px;
 }
 .results-box .result p {
-  font-size: 10px;
+  font-size: 15px;
   padding: 5px;
   text-align: center;
   line-height: 1.5;
   color: var(--light-lavender);
+  max-width: 300px;
 }
 /* End Result */
 /* Start Stats */
@@ -112,7 +113,11 @@ h6 {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  cursor: pointer;
 } 
+.stats button:hover {
+  background-color: hsl(225, 31%, 32%);
+}
 /* End Stats */
 @media (max-width: 767px) {
   .results-box {
